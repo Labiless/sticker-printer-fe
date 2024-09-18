@@ -3,22 +3,26 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "dev": "vite",
+    "serve": "vue-cli-service serve --https true",
     "build": "run-p type-check \"build-only {@}\" --",
-    "preview": "vite preview",
     "build-only": "vite build",
+    "dev": "vite",
+    "preview": "vite preview",
     "type-check": "vue-tsc --noEmit -p tsconfig.app.json --composite false"
   },
   "dependencies": {
+    "@vue/cli-service": "^5.0.8",
     "pinia": "^2.1.7",
     "vue": "^3.3.4",
     "vue-router": "^4.2.5",
     "vuetify": "^3.4.2"
   },
   "devDependencies": {
+    "@mdi/font": "^7.3.67",
     "@tsconfig/node18": "^18.2.2",
     "@types/node": "^18.18.5",
     "@vitejs/plugin-vue": "^4.4.0",
+    "@vue/cli-plugin-typescript": "~5.0.0",
     "@vue/tsconfig": "^0.4.0",
     "autoprefixer": "^10.4.16",
     "npm-run-all2": "^6.1.1",

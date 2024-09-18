@@ -12,7 +12,6 @@ export default class Camera {
         }
     };
 
-
     constructor(){
         this.video = document.querySelector("video");
     }
@@ -47,5 +46,9 @@ export default class Camera {
         }
     }  
 
-
+    getVideoFrame = () => {
+        const img = new Image();
+        img.src = this.video;
+        return img;
+    }
 };
